@@ -8,11 +8,11 @@ StringNewTypes.jl exports a single macro, `@newtype`.
 Calling `@newtype Foo` will define a new type `Foo`, which is a wrapper type around `String`.
 The purpose of newtypes is to inform the type system of different "kind" of strings - for example, compare how easy it is to understand the purpose of the following line of code where different data is encoded as `String`:
 
-* `viruses = Dict{String, Dict{String, Tuple{String, LongRNA{2}}}}`
+* `viruses = Dict{String, Dict{String, Tuple{String, LongRNA{2}}}}()`
 
 Versus one using newtypes:
 
-* `viruses = Dict{Sample, Dict{Experiment, Tuple{Id, LongRNA{2}}}}`
+* `viruses = Dict{Sample, Dict{Experiment, Tuple{Id, LongRNA{2}}}}()`
 
 Currently, `@newtype Foo` defines the following
 * The immutable struct `Foo`
