@@ -36,6 +36,7 @@ end
     @test !isequal(a, "abc")
     @test hash(a) == hash(b) != hash("abc")
     @test hash(a) != hash(Foo("abcd"))
+    @test hash(a) == hash(a, zero(UInt)) != hash(a, one(UInt))
 
     # Difference from another newtype
     x = Bar("abc")
