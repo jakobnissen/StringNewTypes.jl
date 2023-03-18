@@ -1,0 +1,13 @@
+name = "StringNewTypes"
+uuid = "6bc0c8f1-4211-4f24-a5e0-da789dddc1b0"
+authors = ["Jakob Nybo Nissen <jakobnybonissen@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
